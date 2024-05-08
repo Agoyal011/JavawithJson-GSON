@@ -25,7 +25,7 @@ public class Main {
                 "Aniket",
                 "aniket.17.goyal@gmail.com",
                 24,
-                true
+                true,
 
                 address
 
@@ -33,7 +33,7 @@ public class Main {
 
         Gson gson=new Gson();// creating a gson instance
         String json2= gson.toJson(usernested);
-        System.out.println(usernested);
+        System.out.println(json2);
 
     }
 }
