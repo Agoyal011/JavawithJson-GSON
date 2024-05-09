@@ -7,7 +7,8 @@ public class Main {
 
         System.out.println("Welcome to GSON2-Nested Objects");
 
-        Serializeobject();
+        //Serializeobject();
+        deserializeobject();
 
 
     }
@@ -31,9 +32,18 @@ public class Main {
 
         );
 
-        Gson gson=new Gson();// creating a gson instance
-        String json2= gson.toJson(usernested);
+        Gson gson = new Gson();// creating a gson instance
+        String json2 = gson.toJson(usernested);
         System.out.println(json2);
 
     }
-}
+        public static void deserializeobject()
+        {
+            String restaurantJson="{'name':'Future Studio Steak house','owner':{'name':'Christian','address':{ 'city':'Ludhiana','country':'India','houseNumber':'771','street':'Main Street','cook':{'age':18,'name':'Aniket','salary':1500,'waiter':{ 'age':18,'name':'Norman','salary':1000}";
+
+            Restaurant restaurant= new Gson().fromJson(restaurantJson,Restaurant.class);
+            //System.out.println(restaurant);
+
+        }
+    }
+

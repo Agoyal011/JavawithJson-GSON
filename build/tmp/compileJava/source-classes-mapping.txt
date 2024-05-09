@@ -1,8 +1,12 @@
 Simpleuser.java
  Simpleuser
-Main.java
- Main
-Useraddress.java
- Useraddress
 NestedUser.java
  NestedUser
+Useraddress.java
+ Useraddress
+Restaurant.java
+ Restaurant
+ Restaurant$RestaurantOwner
+ Restaurant$RestaurantStaff
+Main.java
+ Main
